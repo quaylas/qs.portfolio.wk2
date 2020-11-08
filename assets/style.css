@@ -1,0 +1,77 @@
+/* Color and Spacing Variables */
+:root {
+    --light: #e6e5ec;
+    --medium: #867fa0;
+    --dark: #0d0042;
+}
+/* Body/Global Styles START */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    background-color: var(--light);
+}
+/* Body/Global Styles END */
+/* Header Styles START */
+header{
+    display: flex;
+    padding: 30px 45px;
+    background-color: var(--dark);
+    color: var(--light);
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Cinzel', serif;
+}
+header h1 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 700;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: 400;
+    font-size: 1.5vw;
+    text-decoration: none; 
+    color: var(--light);
+    border-bottom: 1px solid var(--medium);
+}
+/* Header Styles END */
+/* Hero Styles START */
+.hero{
+    background-image: url("./images/PortfolioHero.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.subtitle-outer {
+    background-color: var(--dark);
+    opacity: .5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding: 10px 24px;
+}
+.subtitle {
+    color: var(--light);
+    opacity: 1;
+    font-size: 24px;
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    line-height: 1.3;
+    border-bottom: 1px solid var(--medium);
+}
+/* Hero Styles END */
+
