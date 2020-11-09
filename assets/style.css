@@ -62,7 +62,7 @@ header nav ul li a {
     align-items: flex-end;
     flex-wrap: wrap;
     padding: 10px 24px;
-    margin-top: 230px;
+    margin-top: 280px;
 }
 .subtitle {
     color: var(--light);
@@ -74,36 +74,41 @@ header nav ul li a {
 }
 /* Hero Styles END */
 /* Content Styles START */
-.content {
+.grid-outer {
+    width: 80%;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display:grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 50px;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     color: var(--dark);
     padding: 50px 0;
 }
-.content h2 {
-    display: flex;
-    flex: 1 15%;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    align-self: flex-start;
+.grid-outer h2{
     padding: 0 25px;
     font-family: 'Cinzel', serif;
     font-size: 30px;
     text-align: right;
-    
+    border-right: 3px solid var(--dark);
 }
-.content p {
-    display: flex;
-    flex: 3 85%;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    padding: 10px 25px;
-    border-left: 2px solid var(--dark);
+.grid-content {
     line-height: 1.5;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: repeat(3, 120px);
+}
+.project {
+    padding: 10px;
+    border: 5px ridge var(--medium);
+}
+#project1 {
+    grid-column: span 2;
+    grid-row: span 2;
 }
 /* Content Styles END */
 /* Footer Styles START */
