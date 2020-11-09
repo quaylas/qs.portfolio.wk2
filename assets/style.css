@@ -118,19 +118,17 @@ header nav ul li a {
     height: 100%;
     width: 100%;
     position: absolute;
-    opacity: .25;
+    opacity: .3;
 }
 .project-img:hover {
-    opacity: .6;
+    opacity: .8;
 }
 .project-description {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-flow: column wrap;
+    align-items: flex-end;
     margin-bottom: 15px;
-    width: 25%;
-    padding: 10px;
-    align-items: center;
+    padding: 5px 7px 5px 3px;
     background: var(--medium);
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
@@ -163,6 +161,7 @@ footer h5 {
     font-weight: 300;
     font-size: 24px;
     color: var(--dark);
+    border-bottom: 1px solid var(--dark);
 }
 footer div {
     line-height: 1.5;
